@@ -1,0 +1,80 @@
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+#simon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 340px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.button:hover {
+  opacity: 0.8; /* Mayor brillo al pasar el cursor sobre el botón */
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+#score,
+#timer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dark-mode #simon {
+  background-color: #333;
+  border: 1px solid #f0f0f0;
+}
+
+.dark-mode .button {
+  opacity: 0.8; /* Mayor brillo en el modo oscuro */
+}
+
+.dark-mode .button:hover {
+  opacity: 1; /* Mayor brillo al pasar el cursor sobre el botón en modo oscuro */
+}
+
+.dark-mode h1, .dark-mode #score, .dark-mode #timer {
+  color: #f0f0f0;
+}
